@@ -1,0 +1,444 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+}
+
+.head {
+    color: white;
+    position: relative;
+}
+
+.head::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #24053e;
+    width: 100%;
+    height: 670px;
+    z-index: -1;
+}
+
+.navbar p span,
+.section-3 p span {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.navbar p,
+.section-3 p {
+    font-size: 29.5px;
+    font-weight: 100;
+}
+
+.navbar ul li {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+}
+
+.navbar ul li::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #44ffa1;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+.sectioni {
+    width: 410px;
+    padding: 10px;
+    margin: 10px auto;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 600;
+}
+
+.sectioni span {
+    position: relative;
+}
+
+.sectioni span::before {
+    content: '';
+    width: 100%;
+    height: 4.5px;
+    background-color: #44ffa1;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+
+.section {
+    position: relative;
+    color: white;
+}
+
+#image1 {
+    position: absolute;
+    top: -15px;
+    left: 91px;
+}
+
+#image2 {
+    position: absolute;
+    bottom: 130px;
+    right: 127px;
+}
+
+.btn {
+    display: block;
+    background-color: #44ffa1;
+    color: #24053e;
+    padding: 15px 20px;
+    border-radius: 0;
+    margin: 15px auto;
+    font-size: 18px;
+    border: 2px solid #24053e;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #24053e;
+    color: #44ffa1;
+    border: 2px solid #44ffa1;
+}
+
+#image3 {
+    display: block;
+    margin: 60px auto;
+}
+
+/* section 1*/
+
+.section-1 {
+    color: #24053e;
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    margin: 20px auto;
+    margin-bottom: 60px;
+
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+.content h1 {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.content h3 {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/*Section 2*/
+
+.section-2 {
+    width: 670px;
+    margin: 50px auto;
+    position: relative;
+    height: 565px;
+
+}
+
+.section-2 img {
+    width: 270px;
+    height: 270px;
+}
+
+.box {
+    width: 444px;
+    height: 301px;
+    padding: 43px 30px 30px 30px;
+    background-color: #24053e;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+}
+
+.section-2 h1 {
+    font-size: 35px;
+    padding: 10px 20px 20px 20px;
+}
+
+.section-2 p {
+    font-size: 17px;
+    padding: 10px 20px;
+}
+
+.section-2 .btn {
+    margin: 20px;
+}
+
+#img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: -120px;
+    right: 20px;
+}
+
+.section-3 {
+    margin-top: 50px;
+
+}
+
+.section-3 p {
+    text-align: center;
+    margin: 10px;
+    color: #24053e;
+}
+
+.section-3 a {
+    text-decoration: none;
+}
+
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+
+}
+
+.section-4 img {
+    margin: 10px 15px;
+
+}
+
+/*responsive*/
+
+@media(max-width:1258px) {
+
+    #image1,
+    #image2 {
+        display: none;
+    }
+}
+
+@media(max-width:760px) {
+    .head::before {
+        height: 580px;
+        z-index: -1;
+    }
+
+    .sectioni {
+        font-size: 3rem;
+    }
+
+    #image3 {
+        width: 350px;
+        height: 201px;
+    }
+
+    .section-1 {
+        width: 344px;
+    }
+
+    .content h1 {
+        margin-right: 0;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section-2 img {
+        display: flex;
+        margin: 0px auto;
+        position: relative;
+    }
+
+    .box {
+        /* width: 70%;
+        height: 65%; */
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        margin: 0px auto;
+    }
+
+    #img {
+        display: none;
+    }
+
+    .section-2 h1 {
+        font-size: 28px;
+    }
+
+    .section-2 p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:670px) {
+    .section-2 {
+        width: 80%;
+    }
+
+    .box {
+        margin: 0 auto;
+        width: 80%;
+        width: 353px;
+        height: 296px;
+        /* padding-bottom:40px ; */
+    }
+
+    .sectioni {
+        width: 80%;
+    }
+}
+
+@media(max-width:516px) {
+    .head::before {
+        height: 555px;
+    }
+
+    .sectioni {
+        font-size: 2.5rem;
+    }
+
+    .box {
+        width: 83%;
+    }
+
+    .section-2 h1 {
+        font-size: 24px;
+    }
+
+    .section-2 p {
+        font-size: 15px
+    }
+
+    .section-2 .btn {
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
+
+@media(max-width:372px) {
+
+    .navbar {
+        padding: 31px 33px;
+    }
+
+    .navbar p span,
+    .section-3 p span {
+        font-size: 25px;
+    }
+
+    .navbar ul li {
+        font-size: 16px;
+    }
+
+    .sectioni {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 13px 17px;
+        font-size: 17px;
+    }
+
+    .head::before {
+        height: 503px;
+    }
+
+    .section-1 {
+        width: 270px;
+    }
+
+    .content h1 {
+        font-size: 17px;
+        padding: 12px 18px;
+    }
+
+    .content h3 {
+        font-size: 19px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    #image3 {
+        width: 280px;
+        height: 170px;
+    }
+
+    .section-2 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box {
+        padding: 27px 19px 1px 23px;
+    }
+
+    .section-2 h1 {
+        font-size: 18px;
+    }
+
+    .section-2 p {
+        font-size: 12px;
+    }
+
+    .section-2 .btn {
+        font-size: 12px;
+    }
+
+    .section-2 {
+        height: 495px;
+    }
+}
+
+@media(max-width:280px) {
+    .section-2 .btn {
+        padding: 10px 12px;
+    }
+
+    .box {
+        padding: 18px 19px 18px 19px;
+    }
+
+    #image3 {
+        width: 240px;
+        height: 149px;
+    }
+
+    .head::before {
+        height: 478px;
+    }
+}
